@@ -1,0 +1,89 @@
+﻿body {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.top-bar {
+    display: flex; /* Left + right on same line */
+    justify-content: space-between; /* Push sides apart */
+    align-items: flex-start; /* Align to top */
+    padding: 20px; /* Space inside */
+}
+
+.left-text {
+    text-align: left;
+}
+
+.mid-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-text {
+    text-align: right;
+    font-family: 'Georgia', serif; 
+}
+.big-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0; /* Remove default paragraph spacing */
+}
+
+.contact-text {
+    font-size: 20px;
+    margin: 0;
+}
+
+.small-text {
+    font-size: 16px;
+    margin: 4px 0 0 0; /* Small gap on top */
+}
+
+.highlight {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.note {
+    font-size: 14px;
+    margin: 4px 0 0 0;
+}
+
+.grid-container {
+    display: grid; 
+    grid-template-columns: repeat(2, auto); 
+    grid-template-rows: repeat(2, auto); 
+    gap: 10px 100px; 
+}
+
+//
+
+.subtitle {
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+.contact {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+}
+
+.copy-icon {
+    cursor: pointer;
+    font-size: 20px;
+    transition: transform 0.2s;
+}
+
+    .copy-icon:hover {
+        transform: scale(1.2);
+    }
