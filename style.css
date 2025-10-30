@@ -97,18 +97,21 @@ a {
 
 .project-icons {
     display: flex;
-    gap: 15px;
-    margin: 10px 0 0 40px;
+    margin-left: 20px;
 }
 
     .project-icons img {
         background-color: #2B2B2B;
         border-radius: 10px;
         padding: 10px;
-        
+        gap: 15px;
+        margin: 0 0 0 15px;
+
+        transform: translateY(15px);
+        transition: transform 0.2s ease;
+
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         transition: transform 0.2s ease, box-shadow 0.2s ease;
-            
     }
 
         .project-icons img:hover {
@@ -117,6 +120,14 @@ a {
         }
 
 .project-item p {
-    margin: 10px 0 0 40px;
+    margin: 40px 40px 90px 40px;
     font-size: 20px;
+    background-color: #2B2B2B;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 15px;
+}
+
+.project-title {
+    font-size: 36px;
 }
