@@ -1,6 +1,8 @@
 ﻿body {
-    background-color: #000000;
+    background-color: #080808;
     color: #ffffff;
+    font-family: "Helvetica", "Arial", sans-serif;
+    
 }
 
 .top-bar {
@@ -24,6 +26,7 @@
     text-align: right;
     font-family: 'Georgia', serif; 
 }
+
 .big-text {
     font-size: 24px;
     font-weight: bold;
@@ -75,7 +78,7 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 a {
@@ -131,3 +134,21 @@ a {
 .project-title {
     font-size: 36px;
 }
+
+.project-pictures img {
+    width: 32.6%;
+    height: auto;
+}
+
+.project-item {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+    /* Visible (triggered) state */
+    .project-item.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
